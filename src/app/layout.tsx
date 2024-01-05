@@ -5,8 +5,8 @@ import './globals.css'
 const garamond = EB_Garamond({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Aadil\'s Acknowledgements',
-  description: 'Thank you to all the people who have helped me along the way.',
+  title: 'Pushkar\'s Acknowledgements',
+  description: 'a thank you to all the people who add meaning to my life.',
 }
 
 export default function RootLayout({

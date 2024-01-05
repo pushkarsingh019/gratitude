@@ -21,7 +21,7 @@ const renderTextWithLineBreaks = (text) => {
       <span
         key={`span-${i}`}
         className="delayed-fade-in"
-        style={{ animationDelay: `${3 * i}s` }} // Set the delay here
+        style={{ animationDelay: `${3.0 * i}s` }} // Set the delay here
       >
         {textParts[i]}
       </span>
@@ -66,7 +66,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center gap-16 m-12">
       <div className="flex flex-row justify-center text-5xl text-center text-[#F8FCFF] leading-tight tracking-[-.0125em] mt-4">
-        To the people who&apos;ve helped me <br /> become the way that I am
+        To the people who add meaning in my life
       </div>
       <div className="flex flex-row justify-center gap-16 flex-wrap">
         {shuffledLetters.map((letter, index) => (
@@ -115,27 +115,6 @@ export default function Home() {
             </div>
           </div>
         ) : null}
-      </div>
-
-      <div className="text-2xl text-[#F8FCFF] flex flex-col items-center justify-center leading-tight mb-4">
-        <div className="text-center text-[#F8FCFF] leading-tight">
-          Made with ❤️&nbsp;by&nbsp;
-          <a className="underline" href="https://twitter.com/aadillpickle">
-            @aadillpickle
-          </a>
-        </div>
-        <a
-          className="underline text-center text-[#F8FCFF] leading-tight"
-          href="https://github.com/aadillpickle/acknowledgements/tree/main"
-        >
-          Source code
-        </a>
-        <a
-          className="underline text-center text-[#F8FCFF] leading-tight"
-          href="https://aadillpickle.substack.com/p/an-8-year-old-just-t-posed-on-me"
-        >
-          Why I did this
-        </a>
       </div>
     </div>
   );
